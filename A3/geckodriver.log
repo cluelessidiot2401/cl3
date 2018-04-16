@@ -1,0 +1,45 @@
+1523908415834	geckodriver	INFO	geckodriver 0.20.1
+1523908415845	geckodriver	INFO	Listening on 127.0.0.1:55159
+1523908418865	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Waterfox\\waterfox.exe" "-marionette" "-profile" "C:\\Users\\vikra\\AppData\\Local\\Temp\\rust_mozprofile.f3ZClo96I60f"
+1523908419328	addons.xpi	WARN	Error parsing extensions state: [Exception... "Component returned failure code: 0x80520012 (NS_ERROR_FILE_NOT_FOUND) [amIAddonManagerStartup.readStartupData]"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: resource://gre/modules/addons/XPIProvider.jsm :: loadExtensionState :: line 1554"  data: no] Stack trace: loadExtensionState()@resource://gre/modules/addons/XPIProvider.jsm:1554 < getInstallState()@resource://gre/modules/addons/XPIProvider.jsm:1589 < checkForChanges()@resource://gre/modules/addons/XPIProvider.jsm:3109 < startup()@resource://gre/modules/addons/XPIProvider.jsm:2188 < callProvider()@resource://gre/modules/AddonManager.jsm:269 < _startProvider()@resource://gre/modules/AddonManager.jsm:739 < startup()@resource://gre/modules/AddonManager.jsm:906 < startup()@resource://gre/modules/AddonManager.jsm:3090 < observe()@jar:file:///C:/Program%20Files/Waterfox/omni.ja!/components/addonManager.js:65
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908421608	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908423058	Marionette	INFO	Listening on port 55167
+[Child 5328] WARNING: pipe error: 109: file c:/Users/Alex/Waterfox/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 5328] WARNING:1523908585472	geckodriver	INFO	geckodriver 0.20.1
+1523908585481	geckodriver	INFO	Listening on 127.0.0.1:55213
+1523908588521	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\vikra\\AppData\\Local\\Temp\\rust_mozprofile.Dpnk3SLMEOUS"
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908590022	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908591608	Marionette	INFO	Listening on port 55222
+1523908591642	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 12172, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[GPU 3736, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+1523908630921	geckodriver	INFO	geckodriver 0.20.1
+1523908630931	geckodriver	INFO	Listening on 127.0.0.1:55266
+1523908633942	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\vikra\\AppData\\Local\\Temp\\rust_mozprofile.LUMtUcZyy7sO"
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908634468	Marionette	INFO	Enabled via --marionette
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+Unable to read VR Path Registry from C:\Users\vikra\AppData\Local\openvr\openvrpaths.vrpath
+1523908636068	Marionette	INFO	Listening on port 55276
+1523908637064	Marionette	WARN	TLS certificate errors will be ignored for this session
+1523908820654	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
+[Child 3432, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8948, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 8948, Chrom[Parent 8796, Gecko_IOThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+

@@ -159,6 +159,14 @@ public:
 		bs.printArray();
 	}
 
+	void runAllTests(){
+		openFileTest();
+		getContentTest();
+		sortTest();
+		getContentTest();
+		searchTest();		
+	}
+
 };
 
 int main()
