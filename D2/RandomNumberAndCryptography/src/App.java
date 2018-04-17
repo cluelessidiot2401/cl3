@@ -28,7 +28,7 @@ public class App {
 			key = Arrays.copyOf(key, 16);
 			SecretKeySpec SK = new SecretKeySpec(key, "AES");
 			byte[] iv = new byte[16];
-			for(int i=0;i<16;++i)	iv[i]=0;
+			for(int i=0;i<16;++i)	iv[i]=(byte)randomNumberGenerator1.generate();
 			IvParameterSpec IVSpec = new IvParameterSpec(iv);
 			
 			Cipher encrypt = Cipher.getInstance("AES/CBC/PKCS5Padding");
@@ -42,13 +42,13 @@ public class App {
 			keyDec = Arrays.copyOf(keyDec, 16);
 			SecretKeySpec SKDec = new SecretKeySpec(keyDec, "AES");
 			byte[] ivDec = new byte[16];
-			for(int i=0;i<16;++i)	ivDec[i]=0;
+			for(int i=0;i<16;++i)	ivDec[i]=(byte)randomNumberGenerator2.generate();
 			IvParameterSpec IVSpecDec = new IvParameterSpec(ivDec);
 			
 			Cipher decrypt = Cipher.getInstance("AES/CBC/PKCS5Padding");
 			decrypt.init(Cipher.DECRYPT_MODE, SKDec,IVSpecDec);
 			byte [] decryptedString = decrypt.doFinal(encryptedString);
-			System.out.println("Decrypted String = "+ new String(decryptedString,"UTF-8"));
+			System.out.println("Decrypted String = "+ new String(decryptedString));
 			
 			
 			

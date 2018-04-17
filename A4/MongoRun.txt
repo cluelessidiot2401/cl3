@@ -1,0 +1,7 @@
+REPLACE:
+connection = MongoClient("127.0.0.1",27017)
+
+WITH:
+URI = 'mongodb://dev:dev123@192.168.4.96:27017/'
+client=MongoClient(URI)
+
