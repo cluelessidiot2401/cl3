@@ -1,4 +1,4 @@
-import hashlib, uuid, socket
+import hashlib, uuid, socket, sha
 
 def calculateHash(password):
 	# salt = uuid.uuid4().hex
@@ -14,6 +14,7 @@ sock.connect(("127.0.0.1",5000))
 print("Enter data to be sent")
 data = str(input())
 dataHash = calculateHash(data)
+dataHash = sha.shaDigest(data)
 
 sock.send(data.encode())
 sock.send(dataHash.encode())

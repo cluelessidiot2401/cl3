@@ -1,4 +1,4 @@
-import hashlib, uuid, socket
+import hashlib, uuid, socket, sha
 
 def calculateHash(password):
 	# salt = uuid.uuid4().hex
@@ -17,7 +17,8 @@ data = conn.recv(1024).decode()
 dataHash = conn.recv(1024).decode()
 print(data,dataHash)
 
-calculatedHash = calculateHash(data)
+# calculatedHash = calculateHash(data)
+calculatedHash = sha.shaDigest(data)
 output = ""
 if ((calculatedHash==dataHash)):
 	output = "Data Integrity confirmed"
