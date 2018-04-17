@@ -17,15 +17,6 @@ class Philosopher(threading.Thread):
     running = True
     connection = MongoClient("127.0.0.1",27017)
     printcounter=0
-    @staticmethod
-    def readFromMongo(self,index):
-        print("Reading raw data....")
-        db = Philosopher.connection.test.diniraw
-        limit=self.printcounter
-        cursor = db.find({"ph_no": index})[limit:limit+1]
-        print(cursor[0])
-        self.printcounter+=1 #print next record 
-        self.printcounter%=9 #number of records per philo
  
     def __init__(self, i, xname, forkOnLeft, forkOnRight):
         threading.Thread.__init__(self)
@@ -63,6 +54,17 @@ class Philosopher(threading.Thread):
         Philosopher.readFromMongo(self,self.index)
         time.sleep(random.uniform(1,10))
         print('%s finishes execution and enters waiting pool.' % self.name)
+
+    @staticmethod
+    def readFromMongo(self,index):
+        print("Reading raw data....")
+        db = Philosopher.connection.test.diniraw
+        limit=self.printcounter
+        cursor = db.find({"ph_no": index})[limit:limit+1]
+        print(cursor[0])
+        self.printcounter+=1 #print next record 
+        self.printcounter%=9 #number of records per philo
+
         
 def DiningPhilosophers():
     forks = [threading.Lock() for n in range(5)]
